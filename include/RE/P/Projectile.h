@@ -111,9 +111,7 @@ namespace RE
 		bhkSimpleShapePhantom*     unk0E0;             // 0E0 - smart ptr
 		mutable BSSpinLock         unk0E8;             // 0E8
 		NiPoint3                   unk0F0;             // 0F0
-		float                      unk0FC;             // 0FC
-		float                      unk100;             // 100
-		float                      unk104;             // 104
+		NiPoint3                   linearVelocity;     // 0FC
 		void*                      unk108;             // 108 - smart ptr
 		void*                      unk110;             // 110 - smart ptr
 		NiPointer<ActorCause>      actorCause;         // 118
