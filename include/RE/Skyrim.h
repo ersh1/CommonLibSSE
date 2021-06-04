@@ -1092,6 +1092,7 @@
 #include "RE/T/TESDescription.h"
 #include "RE/T/TESEffectShader.h"
 #include "RE/T/TESEnchantableForm.h"
+#include "RE/T/TESEnterBleedoutEvent.h"
 #include "RE/T/TESEquipEvent.h"
 #include "RE/T/TESEyes.h"
 #include "RE/T/TESFaction.h"
