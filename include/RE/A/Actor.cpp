@@ -337,6 +337,13 @@ namespace RE
 		return nullptr;
 	}
 
+	bool Actor::HasLineOfSight(TESObjectREFR* a_ref, bool& a_arg2)
+	{
+		using func_t = decltype(&Actor::HasLineOfSight);
+		REL::Relocation<func_t> func{ REL::ID(53029) };
+		return func(this, a_ref, a_arg2);
+	}
+
 	bool Actor::HasPerk(BGSPerk* a_perk) const
 	{
 		using func_t = decltype(&Actor::HasPerk);
@@ -370,6 +377,13 @@ namespace RE
 	bool Actor::IsBeingRidden() const
 	{
 		return IsAMount() && extraList.HasType(ExtraDataType::kInteraction);
+	}
+
+	bool Actor::IsBlocking() const
+	{
+		using func_t = decltype(&Actor::IsBlocking);
+		REL::Relocation<func_t> func{ REL::ID(36927) };
+		return func(this);
 	}
 
 	bool Actor::IsCommandedActor() const
@@ -415,9 +429,23 @@ namespace RE
 		return func(this, a_actor);
 	}
 
+	bool Actor::IsInMidair() const
+	{
+		using func_t = decltype(&Actor::IsInMidair);
+		REL::Relocation<func_t> func{ REL::ID(36259) };
+		return func(this);
+	}
+
 	bool Actor::IsOnMount() const
 	{
 		return !IsAMount() && extraList.HasType(ExtraDataType::kInteraction);
+	}
+
+	bool Actor::IsOverEncumbered() const
+	{
+		using func_t = decltype(&Actor::IsOverEncumbered);
+		REL::Relocation<func_t> func{ REL::ID(36457) };
+		return func(this);
 	}
 
 	bool Actor::IsPlayerTeammate() const
@@ -476,6 +504,20 @@ namespace RE
 		using func_t = decltype(&Actor::RequestDetectionLevel);
 		REL::Relocation<func_t> func{ Offset::Actor::RequestDetectionLevel };
 		return func(this, a_target, a_priority);
+	}
+
+	void Actor::SetRotationX(float a_angle)
+	{
+		using func_t = decltype(&Actor::SetRotationX);
+		REL::Relocation<func_t> func{ REL::ID(36602) };
+		return func(this, a_angle);
+	}
+
+	void Actor::SetRotationZ(float a_angle)
+	{
+		using func_t = decltype(&Actor::SetRotationZ);
+		REL::Relocation<func_t> func{ REL::ID(36248) };
+		return func(this, a_angle);
 	}
 
 	void Actor::StealAlarm(TESObjectREFR* a_ref, TESForm* a_object, std::int32_t a_num, std::int32_t a_total, TESForm* a_owner, bool a_allowWarning)
