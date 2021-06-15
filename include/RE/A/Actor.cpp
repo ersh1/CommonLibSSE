@@ -274,6 +274,13 @@ namespace RE
 		return func(this);
 	}
 
+	bool Actor::GetMount(NiPointer<Actor>& a_outMount)
+	{
+		using func_t = decltype(&Actor::GetMount);
+		REL::Relocation<func_t> func{ REL::ID(37757) };
+		return func(this, a_outMount);
+	}
+
 	ObjectRefHandle Actor::GetOccupiedFurniture() const
 	{
 		if (currentProcess) {
