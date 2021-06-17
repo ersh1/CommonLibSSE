@@ -393,6 +393,13 @@ namespace RE
 		return func(this);
 	}
 
+	bool Actor::IsCasting(SpellItem* a_spellItem) const
+	{
+		using func_t = decltype(&Actor::IsCasting);
+		REL::Relocation<func_t> func{ REL::ID(37810) };
+		return func(this, a_spellItem);
+	}
+
 	bool Actor::IsCommandedActor() const
 	{
 		return boolFlags.all(BOOL_FLAGS::kIsCommandedActor);
