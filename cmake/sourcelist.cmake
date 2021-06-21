@@ -174,6 +174,7 @@ set(sources ${sources}
 	include/RE/N/NiNode.cpp
 	include/RE/N/NiObject.cpp
 	include/RE/N/NiObjectNET.cpp
+	include/RE/N/NiPoint2.cpp
 	include/RE/N/NiPoint3.cpp
 	include/RE/N/NiRefObject.cpp
 	include/RE/N/NiSkinInstance.cpp
