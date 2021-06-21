@@ -261,6 +261,13 @@ namespace RE
 		return func(this, a_flags, a_enable);
 	}
 
+	void ExtraDataList::SetHeadingTargetRefHandle(ObjectRefHandle& a_handle)
+	{
+		using func_t = decltype(&ExtraDataList::SetHeadingTargetRefHandle);
+		REL::Relocation<func_t> func{ REL::ID(11530) };
+		return func(this, a_handle);
+	}
+
 	void ExtraDataList::SetInventoryChanges(InventoryChanges* a_changes)
 	{
 		using func_t = decltype(&ExtraDataList::SetInventoryChanges);
