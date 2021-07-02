@@ -176,10 +176,19 @@ namespace RE
 		stl::enumeration<FADE_STATE, std::uint32_t>           fadeState;                      // 130
 		std::uint32_t                                         unk134;                         // 134
 		std::uint64_t                                         unk138;                         // 138
-		std::uint64_t                                         unk140;                         // 140
-		std::uint64_t                                         unk148;                         // 148
-		std::uint64_t                                         unk150;                         // 150
-		std::uint64_t                                         unk158;                         // 158
+		ObjectRefHandle                                       headTrackTarget0;               // 140
+		ObjectRefHandle                                       headTrackTarget1;               // 144
+		ObjectRefHandle                                       headTrackTarget2;               // 148
+		ObjectRefHandle                                       headTrackTarget3;               // 14C
+		ObjectRefHandle                                       headTrackTarget4;               // 150
+		ObjectRefHandle                                       headTrackTarget5;               // 154
+		bool                                                  headTrack0;                     // 158
+		bool                                                  headTrack1;                     // 159
+		bool                                                  headTrack2;                     // 15A
+		bool                                                  headTrack3;                     // 15B
+		bool                                                  headTrack4;                     // 15C
+		bool                                                  headTrack5;                     // 15D
+		std::uint16_t                                         pad15E;                         // 15E
 		float                                                 headTrackTargetTimer;           // 160
 		NiPoint3                                              headTrackTargetOffset;          // 164
 		float                                                 headTrackHoldOffsetHoldTimer;   // 170
@@ -190,9 +199,7 @@ namespace RE
 		void*                                                 unk188;                         // 188 - smart ptr
 		BSTSmartPointer<Data190>                              unk190;                         // 190
 		BSTSmartPointer<Data190>                              unk198;                         // 198
-		float                                                 unk1A0;                         // 1A0
-		float                                                 unk1A4;                         // 1A4
-		float                                                 unk1A8;                         // 1A8
+		RE::NiPoint3                                          unk1A0;                         // 1A0
 		std::uint32_t                                         unk1AC;                         // 1AC
 		std::uint64_t                                         unk1B0;                         // 1B0
 		std::uint64_t                                         unk1B8;                         // 1B8
