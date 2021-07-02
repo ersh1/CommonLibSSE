@@ -91,6 +91,11 @@ namespace RE
 			x * a_pt.y - y * a_pt.x);
 	}
 
+	float NiPoint3::Dot(const NiPoint3& a_pt) const
+	{
+		return x * a_pt.x + y * a_pt.y + z * a_pt.z;
+	}
+
 	float NiPoint3::GetDistance(const NiPoint3& a_pt) const noexcept
 	{
 		return std::sqrtf(GetSquaredDistance(a_pt));

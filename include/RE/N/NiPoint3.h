@@ -28,6 +28,7 @@ namespace RE
 		NiPoint3&    operator/=(float a_scalar);
 
 		NiPoint3            Cross(const NiPoint3& pt) const;
+		float               Dot(const NiPoint3& a_pt) const;
 		[[nodiscard]] float GetDistance(const NiPoint3& a_pt) const noexcept;
 		[[nodiscard]] float GetSquaredDistance(const NiPoint3& a_pt) const noexcept;
 		float               Length() const;
