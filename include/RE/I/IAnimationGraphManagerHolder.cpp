@@ -23,6 +23,13 @@ namespace RE
 		return GetGraphVariableImpl3(a_variableName, a_out);
 	}
 
+	bool IAnimationGraphManagerHolder::GetGraphVariableNiPoint3(const BSFixedString& a_variableName, NiPoint3& a_out) const
+	{
+		using func_t = decltype(&IAnimationGraphManagerHolder::GetGraphVariableNiPoint3);
+		REL::Relocation<func_t> func{ REL::ID(32192) };
+		return func(this, a_variableName, a_out);
+	}
+
 	bool IAnimationGraphManagerHolder::SetAnimationGraphManager(BSTSmartPointer<BSAnimationGraphManager>& a_in)
 	{
 		return SetAnimationGraphManagerImpl(a_in);
