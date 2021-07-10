@@ -13,6 +13,7 @@ namespace RE
 	class TESForm;
 	struct HighProcessData;
 	struct MiddleHighProcessData;
+	struct NiPoint3;
 
 	enum class PROCESS_TYPE
 	{
@@ -143,6 +144,7 @@ namespace RE
 		ActorHandle             GetCommandingActor() const;
 		TESForm*                GetEquippedLeftHand();
 		TESForm*                GetEquippedRightHand();
+		ObjectRefHandle         GetHeadtrackTarget() const;
 		[[nodiscard]] bool      GetIsSummonedCreature() const noexcept;
 		ObjectRefHandle         GetOccupiedFurniture() const;
 		bool                    InHighProcess() const;
@@ -153,6 +155,7 @@ namespace RE
 		bool                    IsGhost() const;
 		void                    SetArrested(bool a_arrested);
 		void                    SetCachedHeight(float a_height);
+		void                    SetHeadtrackTarget(Actor* a_owner, NiPoint3& a_targetPosition);
 		void                    Set3DUpdateFlag(RESET_3D_FLAGS a_flags);
 		void                    Update3DModel(Actor* a_actor);
 
