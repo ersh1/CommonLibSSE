@@ -131,6 +131,13 @@ namespace RE
 		};
 		static_assert(sizeof(Data3C8) == 0x40);
 
+		void SetHeadtrackTarget(int32_t a_headtrackPriority, RE::TESObjectREFR* a_target)
+		{
+			using func_t = decltype(&HighProcessData::SetHeadtrackTarget);
+			REL::Relocation<func_t> func{ REL::ID(38760) };
+			return func(this, a_headtrackPriority, a_target);
+		}
+
 		// members
 		stl::enumeration<VOICE_STATE, std::uint32_t>          voiceState;                     // 000
 		std::uint32_t                                         pad004;                         // 004
