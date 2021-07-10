@@ -115,7 +115,9 @@ namespace RE
 	float NiPoint2::Unitize()
 	{
 		auto length = Length();
-		if (!std::isnan(length)) {
+		if (length == 1.f) {
+			return length;
+		} else if (length > FLT_EPSILON) {
 			operator/=(length);
 		} else {
 			x = 0.0;
