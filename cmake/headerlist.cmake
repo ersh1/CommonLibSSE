@@ -757,6 +757,7 @@ set(headers ${headers}
 	include/RE/H/hkSweptTransform.h
 	include/RE/H/hkTransform.h
 	include/RE/H/hkVector4.h
+	include/RE/H/HorseCameraState.h
 	include/RE/H/HUDData.h
 	include/RE/H/HUDMenu.h
 	include/RE/H/HUDMeter.h
@@ -983,6 +984,7 @@ set(headers ${headers}
 	include/RE/P/PerkEntryVisitor.h
 	include/RE/P/PerkRankVisitor.h
 	include/RE/P/PlayerCamera.h
+	include/RE/P/PlayerCameraTransitionState.h
 	include/RE/P/PlayerCharacter.h
 	include/RE/P/PlayerControls.h
 	include/RE/P/PlayerControlsData.h
